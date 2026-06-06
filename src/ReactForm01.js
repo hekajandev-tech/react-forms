@@ -33,31 +33,31 @@ export default function ReactForm01() {
 
                 {/* email */}
                 <lable>Enter your Email: </lable>
-                <input type="text" name="username" onChange={handleChange} />
+                <input type="email" name="email" onChange={handleChange} />
                 <br /><br />
 
 
                 {/* Age */}
                 <lable>Enter your Age: </lable>
-                <input type="number" name="username" onChange={handleChange} />
+                <input type="number" name="age" onChange={handleChange} />
                 <br /><br />
 
 
                 {/* city */}
                 <lable>City : </lable>
-                <input type="text" name="username" onChange={handleChange} />
+                <input type="text" name="city" onChange={handleChange} />
                 <br /><br />
 
 
                 {/* Message */}
                 <lable>Feedback : </lable>
-                <textarea name="username" onChange={handleChange} placeholder='Enter your Feedback'/>
+                <textarea name="message" onChange={handleChange} placeholder='Enter your Feedback'/>
                 <br /><br />
                 
 
                 {/* select */}
                 <lable>Role : </lable>
-                <select name="username" onChange={handleChange} >
+                <select name="role" onChange={handleChange} >
                     <option value="none">--Select--</option>
                     <option value="Developer">Developer</option>
                     <option value="Designer">Designer</option>
@@ -68,10 +68,6 @@ export default function ReactForm01() {
                 <button type="submit" onClick={handleSubmit}>Submit</button>
             </form>
 
-            <p>{final}</p>
-            <p>Name: {name}</p>
-            <p>Phone No: {num}</p>
-            <p>Rple: {role}</p>
         </div>
     );
 }
